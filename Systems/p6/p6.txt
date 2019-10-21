@@ -1,0 +1,52 @@
+
+                             Computer Systems
+                                 Project 6
+                                Spring 2019
+
+
+turnin code:  cs_p6
+
+
+Write a program that loops doing:
+
+    sleep(1);
+
+It should print this message each time it receives SIGUSR1:
+
+    received SIGUSR1
+
+When the program has received 4 SIGUSR1 signals, it should print this message:
+
+    terminating due to 4 SIGUSR1 signals
+
+and then terminate.
+
+If a SIGUSR2 (2 instead of 1) is received, print:
+
+    received SIGUSR2
+
+and terminate immediately.
+
+
+BE SURE TO HAVE THIS AS THE FIRST EXECUTABLE LINE IN YOUR PROGRAM:
+
+    alarm(90)
+
+
+As in prior projects, if the program is run with a single command-line arg
+of  -hw  then it should simply  print hello world   and then  exit(0)
+
+
+TURNIN info:
+    You should submit a tar file of a directory which contains all of the
+    required files (makefile, C source files, header files, etc).
+    Sample tar command to create a tar file from a dir named p6dir:
+	tar cvf p6.tar ./p6dir  ## do *NOT* use full pathname of the dir
+    After un-tarring your project, I will cd to the dir containing
+    it and type:
+        rm -rf p6
+        rm -f *.o
+        make
+    It should build an executable named p6 as described above.
+    Sample un-tar, build, and simple execution will be provided in the script
+    p6testfiles/PREP.py which must execute correctly to be graded further.

@@ -1,0 +1,9 @@
+put car mustang
+put bird dodo
+get car
+get bird
+put abbigayle iscute
+put sandwhich pbj
+get test
+get abbigayle
+get sandwhich
